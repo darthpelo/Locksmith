@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // ReadableSecureStorable lets us read the account from the keychain
         let result = account.readFromSecureStore()
         
-        print("iOS app: \(result), \(result?.data)")
+        print("iOS app: \(String(describing: result)), \(String(describing: result?.data))")
         
         // DeleteableSecureStorable lets us delete the account from the keychain
         try! account.deleteFromSecureStore()
